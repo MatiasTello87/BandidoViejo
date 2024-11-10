@@ -13,7 +13,6 @@ body{
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    /* background-color: brown; */
 }
 header{
     width: 90%;
@@ -49,7 +48,6 @@ main{
     align-items: center;
     margin-top: 5em;
     gap: 3em;
-    /* background-color: rgb(52, 65, 61); */
     padding: 2em 2em 2em;
 }
 /* Primera seccion */
@@ -58,11 +56,9 @@ main{
     align-items: center;
     justify-content: space-around;
     background-color: aliceblue;
-    /* padding: 2em; */
 }
 .title{
     width: 50%;
-    /* background-color: brown; */
 }
 h1{
     font-size: 3em;
@@ -121,24 +117,93 @@ footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    background-color: blue;
+    gap: 3em;
     justify-items: center;
-    align-items: center;
-    margin: 5em 0;
+    align-items: flex-start;
+    margin: 3em 0;
    
 }
 .card{
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
-    background-color: brown;
+    gap: 1em;
+    padding: 1em;
+    box-shadow: 1px 1px 5px rgba(32, 32, 32, 0.722);
 }
 .card > div{
-    background-color: aqua;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 1em;
+}
+.card > div > img{
+    height: 200px;
+}
+.card > h3{
+    font-size: 2em;
+}
+.card > div > p{
+    font-size: 1.3em;
+
+}
+/* Page Premios */
+.medallero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3em;
+    justify-items: center;
+    align-items: flex-start;
+}
+.medallero_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding: 1em;
+    border: 1px inset rgba(0, 0, 0, 0.382);
+    border-radius: 10px;
+}
+.medallero_item > .item_premio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.medallero_item > .item_premio > img{
+    height: 100px;
+}
+.medallero_item > p{
+    font-size: 1.1em;
+}
+/* Pages Bio */
+.bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+.bio > .bio_grupo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+.bio > .bio_grupo > p{
+    width: 30%;
+    font-size: 1.1em;
+}
+.bio > .bio_grupo > img{
+    width: 30%;
+}
+
+.bio > .bio_bodega{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    color: rgb(13, 44, 44);
+
 }
