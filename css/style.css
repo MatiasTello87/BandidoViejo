@@ -25,6 +25,7 @@ body{
     background-image: linear-gradient(to right bottom,var(--light), var(--darkgrey));
     width: 90%;
     margin: 0 auto;
+    font-weight: 600;
 }
 .container{
     min-height: 100vh;
@@ -37,7 +38,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5em 1em;
+    padding: 1em;
     background-image: linear-gradient(to right bottom,var(--tintoDark), var(--tinto));
     border: 1px solid black;
     border-bottom-right-radius: 15px;
@@ -45,10 +46,15 @@ header{
 
 
 }
- header > ul{
+header >nav{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 3em;
-    list-style: none;
+}
+header >nav > a{
+   color: var(--light);
+   text-decoration: none;
 }
 a{
     cursor: pointer;
@@ -78,14 +84,18 @@ main{
     width: 50%;
 }
 h1{
-    font-size: 3em;
+    font-size: 4em;
     font-family: "Snowburst One", serif;
     font-weight: 400;
     font-style: normal;
     margin-bottom: 1em;
 }
-p{
-    width: 50%;
+.title >p{
+    font-size: 1.2em;
+    width: 70%;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 /* Seccion 2 */
 .seccion2{
@@ -95,6 +105,11 @@ p{
     flex-direction: column;
     align-items: center;
     gap: 3em;
+}
+.seccion2 > p{
+    font-size: 1.2em;
+    width: 80%;
+
 }
 .paisaje{
     width: 80%;
@@ -118,11 +133,17 @@ footer{
     align-items: center;
     gap: 1em;
 }
+.footer_inicio > a> h4{
+    color: var(--tintoDark);
+}
 .footer_contacto{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1em;
+}
+.footer_contacto> a > h4{
+    color: var(--tintoDark);
 }
 .footer_icon{
     width: 30px;
@@ -131,6 +152,7 @@ footer{
 /* Vinoteca */
 /* Titulo de páginas secundarias */
 .title_pages{
+    transform: translateX(-300px);
     font-size: 3em;
     color: var(--tinto);
 }
@@ -164,9 +186,18 @@ footer{
 }
 .card > h3{
     font-size: 2em;
+    color: var(--tintoDark);
+    border-bottom: .5px solid var(--tintoDark);
+
 }
 .card > div > p{
-    font-size: 1.3em;
+    font-size: 1.2em;
+    padding: 1em;
+    border-left: 1px inset var(--tinto);
+
+}
+.card > div > img{
+    max-height: 80%;
 
 }
 /* Page Premios */
@@ -214,10 +245,11 @@ footer{
 }
 .bio > .bio_grupo > p{
     width: 30%;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 .bio > .bio_grupo > img{
     width: 30%;
+    transform: translateY(-3em);
 }
 
 .bio > .bio_bodega{
@@ -226,8 +258,19 @@ footer{
     gap: 2em;
     align-items: center;
     color: var(--tintoDark);
+}
+.bio > .bio_bodega > p{
+    width: 50%;
+    font-size: 1.2em;
+    font-weight: 600;
 
 }
+.bio > .bio_bodega > h4{
+    /* width: 50%; */
+    font-size: 2em;
+
+}
+/* Pages Contacto */
 .contacto_icons{
     display: flex;
     justify-content: center;
@@ -271,4 +314,26 @@ footer{
 .mensaje > textarea{
     width: 80%;
     height: 100px;
+}
+/* Mediaqueries Mobile */
+/*Mobile */
+@media only screen and (max-width:468px){
+    .container{
+        overflow-x: hidden;
+    }
+    .container > nav > ul{
+        display: none;
+    }
+    .container > header > ul{
+        flex-direction: column;
+        gap: 1em;
+    }
+    .container > main > .inicio{
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+    }
+    .container > main > .inicio > .title{
+        width: 100%;
+
+    }
 }
