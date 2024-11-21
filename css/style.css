@@ -303,7 +303,7 @@ footer{
 .contacto{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    justify-items: center;
+    gap: 2em;
     align-items: self-start;
 }
 .contacto> form{
@@ -315,7 +315,7 @@ footer{
     padding: 2em;
     gap: 2em;
     border: 1px solid var(--tinto);
-    border-radius: 15px;
+    border-radius: 30px;
 }
 .contacto> form> p, input, textarea{
     width: 100%;
