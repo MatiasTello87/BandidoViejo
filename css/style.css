@@ -21,7 +21,8 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Rosario", sans-serif;
+    font-family: 'Lato';
+    font-weight: 400;
 }
 .body{
     margin: 0 auto;
@@ -174,40 +175,61 @@ footer{
 .footer_icon{
     width: 30px;
 }
-/* Pages */
+
+
+/* ----------- Pages ---------- */
 /* Vinoteca */
-/* Titulo de páginas secundarias */
-.title_pages{
-    transform: translateX(-300px);
-    font-size: 3em;
-    color: var(--tinto);
-}
-.cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 3em;
-    justify-items: center;
-    align-items: flex-start;
-    margin: 3em 0;
-   
-}
-.card{
-    min-height: 100%;
+
+/* Portada*/
+.portada{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
-    padding: 1em;
-    box-shadow: 1px 1px 5px var(--tintoDark);
+    justify-content: space-around;
+}
+.portada>img{
+    width: 100%;
+    transform: translateY(-1px);
+}
+
+.portada> h2{
+    font-size: 5em;
+    letter-spacing: 10px;
+    transform: translateY(-300px);
+    color: white;
+    padding: 5px;
+    border-left: 3px solid white;
+    
+}
+/* Tarjetas de Variedad de Vinos */
+.cards{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+.card{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 4em;
+    border: 1px solid var(--tinto);
+    gap: 2em;
+
 }
 .card > div{
+    width: 70%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1em;
+    flex-direction: column;
+    gap: 2em;
+ 
 }
-.card > div > img{
+.card > div > p{
+    width: 80%;
+    font-size: 1.2em;
+}  
+/* .card > div > img{
     height: 200px;
 }
 .card > h3{
@@ -225,7 +247,7 @@ footer{
 .card > div > img{
     max-height: 80%;
 
-}
+} */
 /* Page Premios */
 .medallero{
     display: grid;
