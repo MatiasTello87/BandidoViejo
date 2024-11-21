@@ -253,7 +253,9 @@ footer{
 }
 .premios_item >p{
     width: 75%;
+    text-align: center;
 }
+
 
 /* Pages Bio */
 .bio{
