@@ -24,6 +24,11 @@
     font-family: 'Lato';
     font-weight: 400;
 }
+/* Tamaño de fuente de todos los párrafos */
+p{
+    font-size: 1.2em;
+
+}
 .body{
     margin: 0 auto;
     width: 90%;
@@ -180,7 +185,7 @@ footer{
 /* ----------- Pages ---------- */
 /* Vinoteca */
 
-/* Portada*/
+/* Portada de todas las páginas secundarias*/
 .portada{
     display: flex;
     flex-direction: column;
@@ -201,6 +206,7 @@ footer{
     border-left: 3px solid white;
     
 }
+
 /* Tarjetas de Variedad de Vinos */
 .cards{
     width: 60%;
@@ -227,56 +233,28 @@ footer{
 }
 .card > div > p{
     width: 80%;
-    font-size: 1.2em;
 }  
-/* .card > div > img{
-    height: 200px;
-}
-.card > h3{
-    font-size: 2em;
-    color: var(--tintoDark);
-    border-bottom: .5px solid var(--tintoDark);
 
-}
-.card > div > p{
-    font-size: 1.2em;
-    padding: 1em;
-    border-left: 1px inset var(--tinto);
-
-}
-.card > div > img{
-    max-height: 80%;
-
-} */
 /* Page Premios */
-.medallero{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 3em;
-    justify-items: center;
-    align-items: flex-start;
-}
-.medallero_item{
+.premios{
+    width: 70%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3em;
-    padding: 1em;
-    border: 1px inset var(--tintoDark);
-    border-radius: 10px;
 }
-.medallero_item > .item_premio{
+.premios_item{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 3em;
 }
-.medallero_item > .item_premio > img{
-    height: 100px;
+.premios_item >p{
+    width: 75%;
 }
-.medallero_item > p{
-    font-size: 1.1em;
-}
+
 /* Pages Bio */
 .bio{
     display: flex;
