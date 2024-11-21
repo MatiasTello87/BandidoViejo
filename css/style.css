@@ -307,15 +307,15 @@ footer{
     align-items: self-start;
 }
 .contacto> form{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2em;
-    gap: 1em;
+    gap: 2em;
     border: 1px solid var(--tinto);
     border-radius: 15px;
-
 }
 .contacto> form> p, input, textarea{
     width: 100%;
@@ -323,11 +323,16 @@ footer{
     padding: 2em;
     border-radius: 15px;
 }
+.contacto > form > textarea{
+    height: 300px;
+}
 .contacto> form> button{
     background-color: var(--tinto);
     padding: 1em 3em;
     border-radius: 15px;
     color: white;
+    margin-top: 4em;
+    cursor: pointer;
 }
 /* Mediaqueries Mobile */
 /*Mobile */
