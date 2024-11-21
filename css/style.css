@@ -10,10 +10,12 @@
 :root{
     --light: #F7EFDE;
     --darkgrey: #7e7260bd;
-    --tinto: #511730f1;
-    --tintoDark: #2e111ee5;
+    --tinto: #511730;
+    --tintoDark: #2e111e;
 
 }
+
+/* Estructura principal */
 *{
     margin: 0;
     padding: 0;
@@ -23,7 +25,6 @@
 }
 .body{
     margin: 0 auto;
-    background-image: linear-gradient(to right bottom,var(--light), var(--darkgrey));
     width: 90%;
     font-weight: 600;
 }
@@ -33,6 +34,8 @@
     grid-template-rows: auto 1fr auto;
     justify-items: center;
 }
+
+/* Header */
 header{
     width: 90%;
     position: fixed;
@@ -41,11 +44,8 @@ header{
     align-items: center;
     padding: 1em;
     background-image: linear-gradient(to right bottom,var(--tintoDark), var(--tinto));
-    border: 1px solid black;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-
-
+    border: 1px inset var(--tintoDark);
+    z-index: 10;
 }
 header >.nav_links{
     display: flex;
@@ -73,92 +73,103 @@ header >.nav_links{
 .logo{
     width: 40px;
 }
+/* Menú principal */
 main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 5em;
-    gap: 5em;
-    padding: 2em 2em 2em;
+    gap: 3em;
 }
 /* Primera seccion */
-.inicio{
-    padding: 2em;
+.inicio_paisaje{
+    width: 1200px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-.title{
+
+.inicio_paisaje> h1{
+    font-size: 3em;
+    font-family: "Snowburst One", serif;
+    font-weight: 600;
+    letter-spacing: 10px;
+    transform: translateY(-440px);
+    color: white;
+}
+
+/* Seccion 2 */
+.seccion2{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.intro{
     width: 50%;
 }
-.title> h1{
-    font-size: 3.5em;
-    font-family: "Snowburst One", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 1em;
-}
-.title >p{
+.intro >p{
     font-size: 1.2em;
-    width: 70%;
     font-style: italic;
     letter-spacing: 1px;
     font-weight: 600;
 }
-/* Seccion 2 */
-.seccion2{
-    width: 80%;
-    margin-top: 5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3em;
-}
-.seccion2 > p{
-    font-size: 1.2em;
-    width: 80%;
+/* Index 3 Sección */
 
+.seccion3{
+    width: 60%;
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    gap: 3em;
+    padding: 4em 0;
 }
-.paisaje{
-    width: 80%;
-}
-/* Footer */
-footer{
-    width: 90%;
+.seccion3_item{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 3em;
+}
+.seccion3_item > p{
+    width: 40%;
+}
+.seccion3_item > img{
+    width: 50%;
+}
+
+
+/* Footer */
+footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 3em;
     padding: 1em;
     margin-top: 2em;
-    border: 1px inset var(--tintoDark);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    background-color:var(--tinto);
+    color: white;
 
 }
 .footer_inicio{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 1em;
 }
-.footer_inicio > a{
-    text-decoration: none;
-}
+
 .footer_title{
-    font-size: 1em;
-    color: var(--tintoDark);
+    font-size: 2.5em;
+    color: white;
 }
 .footer_contacto{
+    align-items: end;
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1em;
-}
-.footer_contacto> h4{
-    color: var(--tintoDark);
-    margin-bottom: 0;
 }
 .footer_icon{
     width: 30px;
