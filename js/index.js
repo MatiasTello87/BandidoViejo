@@ -14,6 +14,4 @@ cerrar.addEventListener('click',()=>{
     hamburg.style.display= 'block';
     nav.style.display= 'none';
     cerrar.style.display= 'none';  
-
-
 })

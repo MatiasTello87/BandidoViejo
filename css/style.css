@@ -27,11 +27,11 @@
 /* Tamaño de fuente de todos los párrafos */
 p{
     font-size: 1.2em;
-
+    font-style: italic;
 }
 .body{
     margin: 0 auto;
-    width: 90%;
+    /* width: 90%; */
     font-weight: 600;
 }
 .contenedor{
@@ -43,7 +43,7 @@ p{
 
 /* Header */
 header{
-    width: 90%;
+    width: 100%;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -233,7 +233,66 @@ footer{
 }
 .card > div > p{
     width: 80%;
+}
+.card > div > h3{
+    font-size: 1.5em;
+    transform: translateX(20px);
+}
+.card > div > a{
+    align-self: end;
+    color: var(--tintoDark);
+}
+/* --Modal-- */
+.modal{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s .7s;
+    --transform: translateY(-100vh);
+    --transition: transform .5s;
 }  
+.modal_container{
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    margin: auto;
+    width: 30%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 3em 2em;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+.modal_p{
+    width: 70%;
+}
+.modal_cerrar{
+    text-decoration: none;
+    padding: .5em 1.5em;
+    background-color: var(--tinto);
+    color: white;
+    border-radius: 15px;
+}
+.modal_cerrar:hover{
+    color: var(--tinto);
+    background-color: white;
+    border: 1px solid var(--tinto);
+    transition: background-color .3s;
+}
+.modal_show{
+    opacity: 1;
+    pointer-events: unset;
+    z-index: 15;
+    transition: opacity .5s;
+    --transform: translateY(0);
+    --transition: transform .5s .3s;
+}
 
 /* Page Premios */
 .premios{
