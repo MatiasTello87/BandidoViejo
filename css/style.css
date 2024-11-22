@@ -89,22 +89,38 @@ main{
     gap: 3em;
 }
 /* Primera seccion */
-.inicio_paisaje{
-    width: 1200px;
+/* Portada de todas las páginas secundarias*/
+.portada{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-
-.inicio_paisaje> h1{
-    font-size: 3em;
-    font-family: "Snowburst One", serif;
-    font-weight: 600;
-    letter-spacing: 10px;
-    transform: translateY(-440px);
-    color: white;
+.portada>img{
+    width: 110%;
+    transform: translateY(-1px);
 }
+.portada > h1{
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: 'Snowburst One';
+    transform: translateY(-500px);
+    color: white;
+    padding: 5px;
+}
+.portada> h2{
+    font-size: 5em;
+    letter-spacing: 10px;
+    transform: translateY(-300px);
+    color: white;
+    padding: 5px;
+    border-left: 3px solid white;
+}
+/* portada de inicio */
+.portada > .montaña{
+    width: 115%;
+}
+
 
 /* Seccion 2 */
 .seccion2{
@@ -185,27 +201,7 @@ footer{
 /* ----------- Pages ---------- */
 /* Vinoteca */
 
-/* Portada de todas las páginas secundarias*/
-.portada{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-.portada>img{
-    width: 100%;
-    transform: translateY(-1px);
-}
 
-.portada> h2{
-    font-size: 5em;
-    letter-spacing: 10px;
-    transform: translateY(-300px);
-    color: white;
-    padding: 5px;
-    border-left: 3px solid white;
-    
-}
 
 /* Tarjetas de Variedad de Vinos */
 .cards{
@@ -362,11 +358,13 @@ footer{
 .contacto{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 2em;
-    align-items: self-start;
+    /* gap: 2em; */
+    /* align-items: self-start; */
+    justify-items: center;
 }
 .contacto> form{
     height: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
