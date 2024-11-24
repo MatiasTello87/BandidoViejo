@@ -385,7 +385,7 @@ footer{
     cursor: pointer;
 }
 /* Mediaqueries Mobile */
-/*Mobile */
+/*Mobile*/
 @media only screen and (max-width:468px){
     .contenedor{
         overflow-x: hidden;
@@ -433,3 +433,4 @@ footer{
         width: 25px;
     }
 }
+
