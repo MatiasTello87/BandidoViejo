@@ -51,6 +51,9 @@ header{
     border: 1px inset var(--tintoDark);
     z-index: 10;
 }
+header>ul{
+    margin-bottom: 0;
+}
 header >.nav_links{
     display: flex;
     justify-content: center;
@@ -99,11 +102,12 @@ main{
     transform: translateY(-1px);
 }
 .portada > h1{
-    font-size: 5em;
-    letter-spacing: 10px;
+    font-size: 4em;
+    letter-spacing: 5px;
     font-family: 'Snowburst One';
-    transform: translateY(-500px);
-    color: white;
+    font-weight: 600 ;
+    transform: translateY(-300px);
+    color: var(--tintoDark);
     padding: 5px;
 }
 .portada> h2{
@@ -259,12 +263,13 @@ footer{
     width: 30%;
     background-color: white;
     border-radius: 15px;
-    padding: 3em 2em;
+    padding: 2em .5em;
     transform: var(--transform);
     transition: var(--transition);
 }
 .modal_p{
     width: 70%;
+    margin-bottom: 1em;
 }
 .modal_cerrar{
     text-decoration: none;
