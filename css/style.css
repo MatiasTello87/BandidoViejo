@@ -389,48 +389,46 @@ footer{
 @media only screen and (max-width:468px){
     .contenedor{
         overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+        /* Header */
     header > .nav_links{
         display: none;
     }
     header > .nav_links > li{
         margin-bottom: 1em;
     }
-    
     header > .hamburg{
         display: block;
         cursor: pointer;
     }
-   
+        /* Index */
+        main{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 2em;
+            background-color: #2e111e;
+        }
+    /* Slider */
+    .portada{
+        text-align: center;
+    }
     
-    .contenedor> main > .inicio{
-        /* flex-direction: column; */
-        flex-direction: column-reverse;
+    .portada> .slider{
+        width: 500px;
     }
-    .contenedor > main > .inicio > .title{
-        width: 100%;
+    .portada > h1{
+        font-size: 2em;
+        letter-spacing: 0;
+        transform: translateY(-150px);
     }
-    .title > h1{
-        font-size: 3em;
-        margin-bottom: 1em;
-    }
-    .title > p{
-        width: 100%;
-    }
-    .seccion2 > .paisaje{
-        width: 120%;
-    }
-    .seccion2 > p{
-        width: 100%;
-    }
-    footer > .footer_contacto{
-        gap: .5em;
-    }
-    footer > .footer_inicio> a> .logo{
-        width: 30px;
-    }
-    footer > .footer_contacto> a> .footer_icon{
-        width: 25px;
-    }
+
+        /* Footer */
+
 }
 
