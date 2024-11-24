@@ -1,6 +1,6 @@
 
-/* Fuente de Titulo */
-@import url('https://fonts.googleapis.com/css2?family=Kranky&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rosario:ital,wght@0,300..700;1,300..700&family=Snowburst+One&display=swap');
+/* Fuente de Titulo y párrafos */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 /* Colores */
@@ -23,6 +23,7 @@
 }
 /*  Fuente de todos los párrafos */
 p{
+    font-family: "Raleway", sans-serif;
     font-size: 1.2em;
     font-style: italic;
     text-wrap: balance;
@@ -106,9 +107,9 @@ main{
 }
 .portada > h1{
     font-size: 4em;
-    letter-spacing: 5px;
-    font-family: 'Snowburst One';
-    font-weight: 600 ;
+    letter-spacing: 10px;
+    font-family: "Montserrat", serif;
+    font-weight: 400 ;
     transform: translateY(-300px);
     color: white;
     padding: 5px;
