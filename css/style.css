@@ -123,10 +123,9 @@ main{
     border-left: 3px solid white;
 }
 /*  --  -- Slider --  --  */
-.portada > .slider{
-    /* width: 115%; */
-    background-color: #511730;
+.portada > .carousel{
     transform: translateY(-1em);
+
 }
 
 
@@ -416,7 +415,7 @@ footer{
         }
     /* Slider */
     .portada{
-        text-align: center;
+        height: 180px;
     }
     
     .portada> .slider{
