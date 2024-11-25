@@ -475,5 +475,37 @@ footer{
      .footer_icon{
         width: 22px;
     }
+    /* Page Vinoteca */
+    .portada > h2{
+        transform: translateY(-100px);
+        font-size: 3em;
+    }
+    .cards{
+        width: 90%;
+    }
+    .cards > .card{
+        flex-direction: column;
+        padding: 1em;
+    }
+    .cards > .card > div{
+        width: 100%;
+    }
+    /* Premios */
+    .premios{
+        width: 100%;
+    }
+    /* Bio */
+    .bio_item>img {
+        width: 500px;
+    }
+    .bio_item >p {
+        /* position: absolute; */
+        max-width: 80%;
+        transform: translate(70px, -180px);
+        /* color: white; */
+        font-size: 1.2em;
+        /* font-style: italic; */
+        /* letter-spacing: 2px; */
+    }
 }
 
