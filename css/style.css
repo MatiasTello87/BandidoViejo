@@ -378,11 +378,16 @@ footer{
 }
 .contacto> form> button{
     background-color: var(--tinto);
-    padding: 1em 3em;
+    padding: .5em 1.5em;
+    font-size: 1.2em;
     border-radius: 15px;
     color: white;
     margin-top: 4em;
     cursor: pointer;
+}
+.contacto> form> button:hover{
+    color: var(--tinto);
+    background-color: white;
 }
 /* Mediaqueries Mobile */
 /*Mobile*/
@@ -418,8 +423,8 @@ footer{
         height: 180px;
     }
     
-    .portada> .slider{
-        width: 500px;
+    .portada> .slide{
+        height: 500px;
     }
     .portada > h1{
         font-size: 2em;
