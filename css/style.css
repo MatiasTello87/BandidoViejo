@@ -491,6 +491,9 @@ footer{
         width: 100%;
         align-items: center;
     }
+    .cards > .card >.modal> .modal_container{
+        width: 100%;
+    }
     /* Premios */
     .premios{
         width: 100%;
